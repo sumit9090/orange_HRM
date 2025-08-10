@@ -3,9 +3,7 @@
  */
 package com.mystore.dataprovider;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.testng.annotations.DataProvider;
