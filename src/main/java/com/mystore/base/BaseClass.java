@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
@@ -76,7 +77,8 @@ public class BaseClass {
 		
 			
 			if (browserName.equalsIgnoreCase("Chrome")) {
-				
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless"); 
 				//driver=new ChromeDriver();
 				driver.set(new ChromeDriver());
 			
