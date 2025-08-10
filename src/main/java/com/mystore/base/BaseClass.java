@@ -13,7 +13,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import com.mystore.utility.ExtentManager;
+import com.mystore.utility.ExtentManager_original;
 
 
 
@@ -29,7 +29,7 @@ public class BaseClass {
 	
 	@BeforeSuite(groups = { "Smoke", "Sanity", "Regression" })
 	public void loadConfig() {
-		ExtentManager.setExtent();
+		ExtentManager_original.setExtent();
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -47,7 +47,7 @@ public class BaseClass {
 	
 	@AfterSuite(groups = { "Smoke", "Sanity", "Regression" })
 	public void AfterSuite() {
-		ExtentManager.endReport();
+		ExtentManager_original.endReport();
 	}
 	 
 	/*

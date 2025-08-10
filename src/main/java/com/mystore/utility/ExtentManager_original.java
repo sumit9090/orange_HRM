@@ -8,7 +8,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
  * @author Hitendra: ExtentManager class is used for Extent Report
  *  
  */
-public class ExtentManager {
+public class ExtentManager_original {
 	
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
@@ -16,7 +16,7 @@ public class ExtentManager {
 	
 	public static void setExtent() {
 		//htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+BaseClass.getCurrentTime()+".html");
-		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output"+"ExtentReport.html");
+		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport1/"+"MyReport.html");
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
 		//htmlReporter.config().setDocumentTitle("Automation Test Report");
 		//htmlReporter.config().setReportName("OrangeHRM Test Automation Report");
