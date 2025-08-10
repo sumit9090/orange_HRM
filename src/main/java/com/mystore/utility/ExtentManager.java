@@ -19,7 +19,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
      public static void setExtent() {
          if (extent == null) { // Prevent multiple initializations
-             String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport1/MyReport.html";
+             String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport/MyReport.html";
              htmlReporter = new ExtentHtmlReporter(reportPath);
 
              try {
